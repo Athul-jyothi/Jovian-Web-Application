@@ -80,6 +80,20 @@ h3 {
 a {
   text-decoration: none;
 }
+#application {
+  color: #000000;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+#application-form label {
+  font-weight: 600;
+}
+#application-form input {
+  padding: 4px;
+  font-size: 1.25rem;
+  margin-top: 4px;
+}
 #navbar {
   padding: 8px;
 }

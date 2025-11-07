@@ -82,10 +82,57 @@
 <div id="application">
   <h2>Submit your application</h2>
   <form id="application-form">
-    <div>
+
+    <div class="form-group">
       <label for="name">Full name</label><br>
-      <input type="text" id="name" name="Full name" required>
+      <input type="text" id="name" name="Full name" required placeholder="John sir">
     </div>
+
+    <div class="form-group">
+      <label for="email">Email</label><br>
+      <input type="text" id="email" name="email" required placeholder="john123@gmail.com">
+    </div>
+
+    <div class="form-group">
+      <label for="tel">Phone number</label><br>
+      <input type="text" id="phonenumber" name="phone number" required placeholder="+91 9876543210">
+    </div>
+
+    <div class="form-group">
+      <label for="date">DOB</label><br>
+      <input type="date" id="dateofbirth" name="date of birth" required>
+    </div>
+
+    <div class="form-group">
+      <label for="position applied">Position applied for</label><br>
+      <select id="Position" name="positionapplied" required>
+        <option value="">Select position</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="resume">Upload resume</label><br>
+      <input type="file" name="rsume" id="resume" accept=".pdf,.docx,.doc" required>
+    </div>
+
+    <div class="form-group">
+      <label for="cover letter">Cover letter</label><br>
+      <textarea name="cv" id="cv" rows="5" placeholder="Explain why you're suitable for this job..."></textarea>
+    </div>
+
+      <div class="form-group">
+<input type="checkbox" name="terms" id="terms" required>
+<label for="terms">I agree to terms and conditions</label>
+      </div>
+
+      <div class="form-group">
+        <input type="button" value="Submit application" name="submit" id="submit" required>
+      </div>
+
   </form>
 
 </div>

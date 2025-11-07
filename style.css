@@ -86,13 +86,36 @@ a {
   margin: 0 auto;
   padding: 0 8px;
 }
+.form-group {
+  margin: 16px 0;
+}
 #application-form label {
   font-weight: 600;
 }
-#application-form input {
-  padding: 4px;
+#application-form input,
+select,
+textarea {
+  padding: 8px;
   font-size: 1.25rem;
   margin-top: 4px;
+  border-radius: 5px;
+  border-color: 1px solid grey;
+}
+.form-group textarea {
+  width: 80%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.form-group input [type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+.form-group input [type="button"] {
+  background-color: rgb(73, 43, 226);
+}
+#email {
+  margin-top: 8px;
+  padding-bottom: 8px;
 }
 #navbar {
   padding: 8px;
